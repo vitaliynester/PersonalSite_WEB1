@@ -1,0 +1,85 @@
+.projects {
+    padding: 160px 50px;
+    display: inline-block;
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-weight: bold;
+        font-size: $desktop72TextSize;
+        color: $blockNameColor;
+    }
+
+    &__one {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0px;
+
+        a {
+            max-width: 50%;
+        }
+
+        &_card {
+            padding: 20px;
+
+            background: #040720;
+            box-shadow: 0px 4px 4px $skillCardShadowColor;
+            border-radius: 53px;
+
+            text-align: center;
+            p {
+                padding: 0;
+                margin: 0;
+                font-weight: bold;
+                font-size: $desktop40TextSize;
+                color: $headerElemColor;
+            }
+
+            span {
+                align-items: center;
+                align-content: center;
+                padding: 0;
+                margin: 0;
+                font-size: $desktop32TextSize;
+                color: $primaryTextColor;
+            }
+        }
+
+        img {
+            padding: 5px;
+            max-width: 50%;
+        }
+    }
+}
+
+.projects-mobile {
+    @include breakpoint-down(medium) {
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+
+        h1 {
+            padding-top: 200px;
+            padding-bottom: 105px;
+            font-size: $mobile40TextSize;
+        }
+
+        a {
+            max-width: 100%;
+        }
+
+        p {
+            font-size: $mobile48TextSize;
+        }
+
+        span {
+            font-size: $mobile32TextSize;
+        }
+
+        .projects__one {
+            padding-bottom: 60px;
+        }
+    }
+}

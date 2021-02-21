@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Персональная страница</title>
+</head>
+
+<body>
+    <!-- Хэдер, показываем только для мобилки -->
+    <header id="head" class="header hide-for-mobile">
+        <!-- Контейнер с содержимым хэдера -->
+        <nav class="flex flex-jc-sb flex-ai-c">
+            <!-- Логотип -->
+            <a href="#head" class="header__logo">
+                <img src="images/logo.png" alt="Логотип сайта">
+            </a>
+            <!-- Блок с ссылками -->
+            <div class="header__links">
+                <a href="https://github.com/vitaliynester">
+                    <img src="images/github.png" alt="GitHub">
+                </a>
+                <a href="https://t.me/vitaliynester">
+                    <img src="images/telegram.png" alt="Telegram">
+                </a>
+                <a href="https://vk.com/vitaliynester">
+                    <img src="images/vk.png" alt="ВКонтакте">
+                </a>
+                <a href="#hello">Главная</a>
+                <a href="#personal">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#footer">Контакты</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Приветственный пункт -->
+    <section id="hello" class="hello hello-mobile">
+        <h2>Приветствую ! Меня зовут,</h2>
+        <h1>Виталий Посаднев</h1>
+        <p>Я разрабатываю мобильные приложения</p>
+        <div class="hello__row">
+            <button><a href="mailto:elemabor@gmail.com">Связаться со мной</a></button>
+            <span>Студент, Разработчик мобильных приложений на Flutter (Dart)</span>
+        </div>
+    </section>
+
+    <!-- Пункт "Обо мне" -->
+    <section id="personal" class="personal personal-mobile">
+        <div class="personal__about_me">
+            <div class="personal__about_me_info">
+                <h1>Обо мне</h1>
+                <img class="personal__about_me_image hide-for-desktop" src="images/my_photo.png" alt="Моя фотография">
+                <p>Меня зовут Виталий Посаднев</br>
+                    Я студент, разработчик мобильных приложений</p>
+                <p>В последнее время разрабатываю мобильные приложения,
+                    совместо с их серверной частью на фрилансе. Опробовал
+                    множество направлений, начиная с проектирования БД и
+                    заканчивая разработкой веб-сайтов на ReactJS с использованием
+                    TypeScript и GraphQL.</p>
+            </div>
+
+            <!-- Блок с навыками -->
+            <div class="personal__about_me_skills">
+                <h1>Навыки</h1>
+                <!-- Грид с иконками -->
+                <div class="personal__about_me_skills_grid">
+                    <img src="images/logo_VSCODE.png" alt="VSCODE">
+                    <img src="images/logo_Visual_Studio.png" alt="Visual_Studio">
+                    <img src="images/logo_DataGrip.png" alt="DataGrip">
+                    <img src="images/logo_PostgreSQL.png" alt="PostgreSQL">
+                    <img src="images/logo_Flutter.png" alt="Flutter">
+                    <img src="images/logo_Python.png" alt="Python">
+                    <img src="images/logo_C++.png" alt="C++">
+                    <img src="images/logo_C.png" alt="C">
+                    <img src="images/logo_CSarp.png" alt="C#">
+                    <img src="images/logo_SQL.png" alt="SQL">
+                    <img src="images/logo_JS.png" alt="JS">
+                    <img src="images/logo_ReactJs.png" alt="ReactJs">
+                </div>
+            </div>
+        </div>
+
+        <!-- Фотография -->
+        <img class="personal__about_me_image hide-for-mobile" src="images/my_photo.png" alt="Моя фотография">
+
+    </section>
+
+    <!-- Пункт "Мои проекты" -->
+    <section id="projects" class="projects projects-mobile">
+        <h1>Мои проекты</h1>
+        <!-- Блок с проектом -->
+        <div class="projects__one">
+            <!-- Ссылка на проект -->
+            <a href="https://github.com/vitaliynester/TaxiDB">
+                <!-- Карточка с информацией о проекте -->
+                <div class="projects__one_card">
+                    <p>Мобильное приложение "Такси"</p>
+                    <span>При разработке данного проекта использавалась база
+                        Firebase для синхронизации местоположения, СУБД PostgreSQL
+                        для хранения всех данных. И RestAPI написанный на Python.</span>
+                </div>
+            </a>
+            <!-- Изображение с проектом -->
+            <img class="hide-for-mobile" src="images/photo_taxi.png" alt="Taxi">
+        </div>
+
+        <!-- Блок с проектом -->
+        <div class="projects__one">
+            <!-- Изображение с проектом -->
+            <img class="hide-for-mobile" src="images/photo_uzread.png" alt="UZREAD">
+            <!-- Ссылка на проект -->
+            <a href="https://github.com/vitaliynester/UZREAD">
+                <!-- Карточка с информацией о проекте -->
+                <div class="projects__one_card">
+                    <p>Мобильное приложение “UZREAD”</p>
+                    <span>Данное приложение разрабатывалось на заказ для удобного доступа к электронной библиотеки. Для
+                        данного приложения также была написана серверная часть на Python с использованием фреймворка
+                        Flask.
+                        Также реализована синхронизация информации о скачанных книгах с Google Sheets.</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Блок с проектом -->
+        <div class="projects__one">
+            <!-- Ссылка на проект -->
+            <a href="https://github.com/vitaliynester/CarShowroom">
+                <!-- Карточка с информацией проекта -->
+                <div class="projects__one_card">
+                    <p>Мобильное приложение "Автосалон"</p>
+                    <span>Данное прложение является ИДЗ по ТИС. Для его реализации была спроектирована и реализована БД
+                        в
+                        СУБД PostgreSQL, а для обмена данными между БД и приложением была написана серверная часть на
+                        Python
+                        (Flask). Данный проект еще не завершен.</span>
+                </div>
+            </a>
+            <!-- Изображение с проектом -->
+            <img class="hide-for-mobile" src="images/photo_carshowroom.png" alt="Автосалон">
+        </div>
+
+        <!-- Блок с проектом -->
+        <div class="projects__one">
+            <!-- Изображение с проектом -->
+            <img class="hide-for-mobile" src="images/photo_seabattle.png" alt="Морской бой">
+            <!-- Ссылка на проект -->
+            <a href="https://github.com/vitaliynester/BattleShip">
+                <!-- Карточка с информацией проекта -->
+                <div class="projects__one_card">
+                    <p>Десктопное приложение “Морской бой”</p>
+                    <span>Данное приложение написано на языке C# с использованием WPF. В данной игре предусмотрена
+                        возможность как игры против компьютера (запрограммирован алгоритм игры), так и против других
+                        игроков
+                        по сети и интернету (была написана отдельная серверная часть).</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Пункт "Обратная связь" -->
+    <section id="footer" class="footer footer-mobile">
+        <h1>Что дальше?</h1>
+        <p>Связаться со мной</p>
+        <span>Если у Вас возникли вопросы или желание сотрудничать,
+            то вы можете написать мне в одну из предложенных социальных сетей
+            или написать на почту. Буду рад сотрудничеству.</span>
+
+        <!-- Ссылки на соц. сети для связи -->
+        <div class="footer-mobile__social hide-for-desktop">
+            <a href="https://github.com/vitaliynester">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+            <a href="https://t.me/vitaliynester">
+                <img src="images/telegram.png" alt="Telegram">
+            </a>
+            <a href="https://vk.com/vitaliynester">
+                <img src="images/vk.png" alt="ВКонтакте">
+            </a>
+        </div>
+
+        <!-- Кнопка с обратной связью -->
+        <div class="button">
+            <button><a href="mailto:elemabor@gmail.com">Связаться со мной</a></button>
+        </div>
+    </section>
+</body>
+
+</html>

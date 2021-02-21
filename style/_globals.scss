@@ -1,0 +1,73 @@
+@import "mixins";
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    line-height: 1.3;
+    background-color: #000214;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: $connectButtonTextColor;
+    border-radius: 12px;
+    color: $connectButtonTextColor;
+    padding: 20px;
+    font-size: $desktop32TextSize;
+
+    a,
+    a:visited,
+    a:hover {
+        color: $connectButtonTextColor;
+    }
+}
+
+// Flexbox
+.flex {
+    background-color: $backgroundColor;
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+// Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}

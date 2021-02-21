@@ -1,0 +1,25 @@
+// Точки останова
+$breakpoints-up: (
+    "medium": "640px",
+    "large": "940px",
+    "xlarge": "1400px",
+);
+$breakpoints-down: (
+    "small": "639px",
+    "medium": "939px",
+    "large": "1399px",
+);
+
+// Обработка при увеличении размера
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($map: $breakpoints-up, $key: $size)) {
+        @content;
+    }
+}
+
+// Обработка при уменьшении размера
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($map: $breakpoints-down, $key: $size)) {
+        @content;
+    }
+}

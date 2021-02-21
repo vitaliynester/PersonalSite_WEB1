@@ -1,0 +1,37 @@
+// Цвета
+$backgroundColor: #000214;
+$blockNameColor: #5fcae1;
+$secondaryColor: rgba(#ffffff, 0.45);
+$headerElemColor: #ffffff;
+$primaryTextColor: #909090;
+$connectButtonTextColor: rgba($blockNameColor, 0.65);
+$skillCardShadowColor: rgba(0, 0, 0, 0.35);
+
+// Размеры
+// Иконки
+$siteLogoSize: calc(1.2rem + 3.2vw); // 40px
+$headerIconsSize: calc(1.2rem + 2.2vw); //60px
+$desktopPersonalImageWidth: calc(0.1rem + 26vw); //500px
+$desktopPersonalImageHeight: calc(0.1rem + 23.4vw); //450px
+$mobilePersonalImageWidth: calc(10rem + 26vw); //500px
+$mobilePersonalImageHeight: calc(10rem + 23.4vw); //450px
+// Иконки в навыках
+$desktopSkillIconWidth: calc(0.1rem + 3.8vw); // 75px
+$desktopSkillIconHeight: calc(0.1rem + 4.3vw); // 85px
+$mobileSkillIconWidth: calc(3rem + 3.5vw); // 75px
+$mobileSkillIconHeight: calc(3rem + 4.3vw); // 85px
+// Иконки связи для мобилки
+$mobileConnectIconSize: calc(2.2rem + 2.2vw); // 55px
+
+// Шрифты
+// Десктоп
+$desktop144TextSize: calc(0.1rem + 6.6vw); // 144px
+$desktop72TextSize: calc(0.1rem + 3.7vw); // 72px
+$desktop65TextSize: calc(0.1rem + 3.3vw); // 65px
+$desktop40TextSize: calc(0.1rem + 2vw); // 40px
+$desktop32TextSize: calc(0.1rem + 1.5vw); // 32px
+// Мобильная версия
+$mobile48TextSize: calc(0.1rem + 4.95vw); // 48px
+$mobile40TextSize: calc(0.5rem + 4.1vw); // 40px
+$mobile32TextSize: calc(0.1rem + 3.3vw); // 32px
+$mobile24TextSize: calc(0.5rem + 1.8vw); // 24px

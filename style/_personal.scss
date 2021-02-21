@@ -1,0 +1,77 @@
+.personal {
+    padding: 140px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        font-weight: bold;
+        font-size: $desktop72TextSize;
+        color: $blockNameColor;
+    }
+
+    &__about_me_info {
+        p {
+            font-size: $desktop32TextSize;
+            color: $primaryTextColor;
+        }
+    }
+
+    &__about_me_image {
+        vertical-align: middle;
+        padding: 0px 30px;
+        max-width: $desktopPersonalImageWidth;
+        max-height: $desktopPersonalImageHeight;
+    }
+
+    &__about_me_skills {
+        margin: 0;
+        &_grid {
+            display: grid;
+            grid-template-columns: repeat(6, $desktopSkillIconWidth);
+            grid-template-rows: repeat(2, $desktopSkillIconHeight);
+            gap: calc(0.1rem + 1vw) calc(0.1rem + 1vw); // 2*20px
+
+            img {
+                max-width: $desktopSkillIconWidth;
+                max-height: $desktopSkillIconHeight;
+            }
+        }
+    }
+}
+
+.personal-mobile {
+    @include breakpoint-down(medium) {
+        padding: 115px 15px 15px 0;
+        display: block;
+        align-items: center;
+        text-align: center;
+
+        .personal__about_me_image {
+            max-width: $mobilePersonalImageWidth;
+            max-height: $mobilePersonalImageHeight;
+        }
+
+        h1 {
+            font-size: $mobile48TextSize;
+        }
+
+        p {
+            font-size: $mobile24TextSize;
+        }
+
+        .personal__about_me_skills_grid {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(3, $mobileSkillIconWidth);
+            grid-template-rows: none;
+            gap: 30px;
+
+            img {
+                max-width: $mobileSkillIconWidth;
+                max-height: $mobileSkillIconHeight;
+            }
+        }
+    }
+}
